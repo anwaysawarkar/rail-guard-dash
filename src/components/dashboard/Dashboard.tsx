@@ -108,7 +108,7 @@ const Dashboard: React.FC = () => {
         <div className="px-6 py-4">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-2xl font-bold text-foreground">Railway Control Center</h1>
+              <h1 className="text-2xl font-bold text-foreground">Rail Pravah Control Center</h1>
               <p className="text-muted-foreground">
                 Welcome, {user?.name} • {user?.role === 'government' ? 'Government Official' : 'Section Controller'}
               </p>
