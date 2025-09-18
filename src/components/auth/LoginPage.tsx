@@ -35,9 +35,9 @@ const LoginPage: React.FC = () => {
             <div className="bg-white/10 p-3 rounded-xl">
               <Train className="h-8 w-8 text-white" />
             </div>
-            <h1 className="text-3xl font-bold text-white">Rail Pravah</h1>
+            <h1 className="text-3xl font-bold text-white">Railway Control</h1>
           </div>
-          <p className="text-white/80">Railway Traffic Management System</p>
+          <p className="text-white/80">Traffic Management System</p>
         </div>
 
         <Card className="shadow-elegant border-0">
