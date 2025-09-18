@@ -31,6 +31,14 @@ export default {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
@@ -47,6 +55,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Railway Control System Colors
+        "control-panel": "hsl(var(--control-panel))",
+        "signal-allow": "hsl(var(--signal-allow))",
+        "signal-hold": "hsl(var(--signal-hold))",
+        "signal-divert": "hsl(var(--signal-divert))",
+        "train-active": "hsl(var(--train-active))",
+        "section-bg": "hsl(var(--section-bg))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +77,15 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-control": "var(--gradient-control)",
+        "gradient-success": "var(--gradient-success)",
+      },
+      boxShadow: {
+        "control": "var(--shadow-control)",
+        "elegant": "var(--shadow-elegant)",
       },
       keyframes: {
         "accordion-down": {
@@ -80,10 +104,25 @@ export default {
             height: "0",
           },
         },
+        "train-move": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
+        "pulse-signal": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.5" },
+        },
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "train-move": "train-move 10s linear infinite",
+        "pulse-signal": "pulse-signal 2s ease-in-out infinite",
+        "fade-in": "fade-in 0.3s ease-out",
       },
     },
   },

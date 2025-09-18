@@ -9,12 +9,18 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-control hover:shadow-elegant transition-all duration-200",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Railway Control System Variants
+        control: "bg-gradient-primary text-white shadow-control hover:shadow-elegant transition-all duration-200",
+        signal: "bg-control-panel text-foreground border border-border hover:bg-accent transition-all duration-200",
+        allow: "bg-signal-allow text-white hover:bg-signal-allow/80 shadow-sm",
+        hold: "bg-signal-hold text-white hover:bg-signal-hold/80 shadow-sm",
+        divert: "bg-signal-divert text-white hover:bg-signal-divert/80 shadow-sm",
       },
       size: {
         default: "h-10 px-4 py-2",
